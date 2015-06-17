@@ -1,0 +1,251 @@
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/AbsoluteLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        style="@style/aplicacion"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="32dp" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/Margen"
+                android:text="Seleccione la dirección IP: "
+                android:textStyle="bold|italic" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp" >
+
+            <NumberPicker
+                android:id="@+id/ip1"
+                android:layout_width="34dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0.33"
+                android:focusable="false"
+                android:focusableInTouchMode="false" />
+
+            <TextView
+                android:id="@+id/dot1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|center_vertical"
+                android:text="."
+                android:textSize="40dp" />
+
+            <NumberPicker
+                android:id="@+id/ip2"
+                android:layout_width="48dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center_vertical" />
+
+            <TextView
+                android:id="@+id/dot2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|center_vertical"
+                android:text="."
+                android:textSize="40dp" />
+
+            <NumberPicker
+                android:id="@+id/ip3"
+                android:layout_width="51dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center_vertical" />
+
+            <TextView
+                android:id="@+id/dot3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="."
+                android:textSize="40dp" />
+
+            <NumberPicker
+                android:id="@+id/ip4"
+                android:layout_width="45dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center_vertical" />
+
+            <TextView
+                android:id="@+id/slash1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|center_vertical"
+                android:text="/"
+                android:textSize="40dp" />
+
+            <NumberPicker
+                android:id="@+id/netmask_one_number"
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:layout_gravity="center_vertical" />
+        </LinearLayout>
+
+        <LinearLayout
+            
+            style="@style/cuadro_a"
+            android:layout_width="match_parent"
+            android:layout_height="34dp" >
+
+            <TextView
+                android:id="@+id/TextView01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Tipo de Red:     "
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt_clase"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="     " />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/cuadro_b"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+            
+
+            <TextView
+                android:id="@+id/TextView02"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text=" Máscara de Subred:     "
+                android:textStyle="bold" />
+
+            <TextView
+                style="@style/cuadro_b"
+                android:id="@+id/subnetMaskExpanded"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text=""
+                android:textSize="16dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/cuadro_a"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" >
+
+            <TextView
+                android:id="@+id/netmaskBinaryCaption"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text=" Binario:     "
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/netmaskBinary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text=""
+                android:textSize="14dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/cuadro_b"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/numberOfHostsCaption"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text=" Número de Host:     "
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/numberOfHosts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text=""
+                android:textSize="16dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/cuadro_a"
+            android:layout_width="match_parent"
+            android:layout_height="38dp" >
+
+            <TextView
+                android:id="@+id/broadcastAddressCaption"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text=" Broadcast Address:     "
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/broadcastAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text=""
+                android:textSize="16dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/cuadro_b"
+            android:layout_width="match_parent"
+            android:layout_height="36dp" >
+
+            <TextView
+                android:id="@+id/wildcardMaskCaption"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text=" Wildcard Mask:     "
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/wildcardMask"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text=""
+                android:textSize="16dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/cuadro_a"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" >
+
+            <TextView
+                android:id="@+id/hostsAddressRangeCaption"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Rango de IP de Hosts:     "
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/hostsAddressRange"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text=""
+                android:textSize="14dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</AbsoluteLayout>
